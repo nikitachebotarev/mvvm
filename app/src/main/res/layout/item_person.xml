@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:background="?attr/selectableItemBackground"
+    android:id="@+id/root_vg"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/picture_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:src="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/picture_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/material_white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/picture_iv"
+        app:layout_constraintLeft_toLeftOf="@id/picture_iv"
+        app:layout_constraintRight_toRightOf="@id/picture_iv"
+        app:layout_constraintTop_toTopOf="@id/picture_iv"
+        tools:text="ВП" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/material_white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/subtitle_tv"
+        app:layout_constraintLeft_toRightOf="@id/picture_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Вадим Петренко" />
+
+    <TextView
+        android:id="@+id/subtitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="18dp"
+        android:alpha="0.6"
+        android:textColor="@color/material_white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/picture_iv"
+        app:layout_constraintTop_toBottomOf="@id/title_tv"
+        tools:text="21 марта 1991" />
+
+    <TextView
+        android:id="@+id/right_subtitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="18dp"
+        android:alpha="0.6"
+        android:textColor="@color/material_white"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/title_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="28 лет" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:alpha="0.2"
+        android:background="@color/material_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/picture_iv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SampleApp</string>
+
+    <string name="title_persons">Работники</string>
+    <string name="title_specs">Специальности</string>
+
+    <string name="toast_stub">Stub!</string>
+    <string name="person_spec_and_age">%1$s, %2$s лет</string>
+    <string name="person_age">%1$s лет</string>
+    <string name="call">Звонок</string>
+    <string name="specs_label">Специальности</string>
+    <string name="select">Выбрать</string>
+    <string name="loading">Загрузка данных</string>
+    <string name="loading_error">Не удалось загрузить данные</string>
+</resources>
